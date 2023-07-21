@@ -1,8 +1,27 @@
+# DEV
 version: "3"
 services:
-  mboard-nuxt:
+  mboard-app:
     build:
       context: .
       dockerfile: docker/app/Dockerfile
     ports:
       - "3000:3000"
+    volumes:
+      - ./:/src
+    networks:
+      - mboard-nuxt
+
+networks:
+  mboard-nuxt:
+    driver: bridge
+
+# BUILD
+#version: "3"
+#services:
+#  mboard-nuxt:
+#    build:
+#      context: .
+#      dockerfile: docker/app/Dockerfile
+#    ports:
+#      - "3000:3000"

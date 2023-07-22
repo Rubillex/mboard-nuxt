@@ -9,6 +9,7 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@pinia-plugin-persistedstate/nuxt',
     '@nuxtjs/color-mode',
+    '@nuxtjs/google-fonts'
   ],
   colorMode: {
     preference: 'system',
@@ -19,5 +20,15 @@ export default defineNuxtConfig({
     classPrefix: '',
     classSuffix: '-mode',
     storageKey: 'nuxt-color-mode'
+  },
+  googleFonts: {
+    families: {
+      preload: true,
+      Roboto: true,
+      'Josefin+Sans': true,
+      Raleway: [100, 300, 400, 600],
+      Montserrat: [100, 300, 400, 500, 600, 700],
+      Inter: [100, 300, 400, 500, 600, 700]
+    }
   }
 });

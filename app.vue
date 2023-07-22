@@ -1,5 +1,7 @@
 <template>
-  <NuxtLayout> qweeqw </NuxtLayout>
+  <NuxtLayout>
+    <div>qweeqwww</div>
+  </NuxtLayout>
 </template>
 
 <style lang="scss">

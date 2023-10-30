@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+
+.Vue-Toastification__container {
+    top: unset !important;
+    bottom: 90px !important;
+    min-height: unset !important;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90% !important;
+}
+
+.Vue-Toastification__toast {
+    top: unset !important;
+    bottom: 0 !important;
+    padding: 12px 16px;
+    min-height: 46px;
+    //width: 414px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: unset;
+    border-radius: 16px;
+}
+
+.Vue-Toastification__toast-body {
+    @include mainFont(600, 14, $text-dark-color);
+    line-height: 22px;
+    width: fit-content;
+    flex: unset;
+}
+
+.Vue-Toastification__icon {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.Vue-Toastification__close-button {
+    padding-left: 0;
+}
+
+.Vue-Toastification__toast--success {
+
+    .Vue-Toastification__toast-body {
+    }
+
+    .Vue-Toastification__close-button {
+    }
+}
+
+.Vue-Toastification__toast--error {
+
+    .Vue-Toastification__toast-body {
+    }
+
+    .Vue-Toastification__close-button {
+    }
+}
+
+.Vue-Toastification__toast--info {
+
+    .Vue-Toastification__toast-body {
+    }
+
+    .Vue-Toastification__close-button {
+    }
+}

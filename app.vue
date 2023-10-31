@@ -4,7 +4,9 @@
     </div>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import '~/globals/validation/validators';
+</script>
 
 <style lang="scss">
 @import 'assets/styles/index';
